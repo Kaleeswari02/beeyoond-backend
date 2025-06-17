@@ -27,6 +27,9 @@ app.use(cors({
 
 // Connect DB
 connectDB();
+app.get("/", (req, res) => {
+  res.send("Beeyoond Backend is Running");
+});
 
 // Middleware
 app.use(express.json());
